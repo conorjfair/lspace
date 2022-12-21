@@ -1,13 +1,85 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.primary-title {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+}
+
+.paypal {
+  size: 5px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1px;
+  background-color: #00064b;
+  padding: 10px 50px;
+  border-radius: 300px;
+  border: none;
+  margin: 5px 10px;
+}
+
+body {
+  text-align: center;
+}
+
+
+/* Home page */
+
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+    45deg, 
+    rgb(0,0, 0, 0.65) 0%, 
+    rgb(0, 0, 0, 0) 100%
+    );
+    align-items: center;
+}
+
+.PPWrapper {
+  display:inline-block;
+
+  top: 50%;
+  left: 50%;
+  width: 20em;
+  height: 18em;
+
+}
+
+/* FORM SUBMISSION STUFF */
+
+.MyForm {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.MyForm label {
+  text-align:left;
+  display:block;
+}
+
+.MyForm h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.MyForm input, .MyForm textarea, .MyForm select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
